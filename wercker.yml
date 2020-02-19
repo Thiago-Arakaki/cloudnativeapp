@@ -54,7 +54,7 @@ deploy-to-kubernetes:
         insecure-skip-tls-verify: true
         command: delete secrets wercker; echo delete registry secret
 
-    #Create a new secret referencing your ocir repository
+    #Create a new secret referencing your ocir repository ok
     - kubectl:
         name: Create a new secret
         server: $OKE_MASTER
